@@ -2,7 +2,7 @@
   "name": "textAngularPro",
   "version": "1.0.1",
   "main": "./dist/textAngular.min.js",
-  "description": "A radically powerful Text-Editor/Wysiwyg editor for Angular.js",
+  "description": "A radically powerful Text-Editor/Wysiwyg editor for Angular.js.",
   "keywords": [
     "editor",
     "angular",
