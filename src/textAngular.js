@@ -5,6 +5,7 @@ License : 2013 MIT
 Version 1.2.1
 
 See README.md or https://github.com/fraywing/textAngular/wiki for requirements and use.
+Avinash
 */
 
 (function(){ // encapsulate all variables so they don't become global vars
