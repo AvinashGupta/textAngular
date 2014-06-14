@@ -1,5 +1,6 @@
 module.exports = function (grunt) {
 	
+	
 	// load all grunt tasks
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
