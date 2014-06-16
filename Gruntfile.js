@@ -4,13 +4,14 @@ module.exports = function (grunt) {
 	// load all grunt tasks
 	grunt.loadNpmTasks('grunt-contrib-jshint');
 	grunt.loadNpmTasks('grunt-contrib-uglify');
+	grunt.loadNpmTasks('grunt-contrib-cssmin');
 	grunt.loadNpmTasks('grunt-contrib-clean');
 	grunt.loadNpmTasks('grunt-istanbul-coverage');
 	grunt.loadNpmTasks('grunt-karma');
 	grunt.loadNpmTasks('grunt-karma-coveralls');
 	
 	// Default task.
-	grunt.registerTask('default', ['uglify', 'clean', 'test']);
+	grunt.registerTask('default', ['uglify', 'cssmin', 'clean', 'test']);
 	grunt.registerTask('test', ['jshint', 'karma', 'coverage']);
 	grunt.registerTask('travis-test', ['jshint', 'karma', 'coverage', 'coveralls']);
 	
@@ -61,6 +62,13 @@ module.exports = function (grunt) {
 			boss: true,
 			eqnull: true,
 			globals: {}
+		  }
+		},
+		cssmin: {
+		  combine: {
+		    files: {
+		      'css/textAngular.min.css': ['css/textAngular.css']
+		    }
 		  }
 		},
 		uglify: {

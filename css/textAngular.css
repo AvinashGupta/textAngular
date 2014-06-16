@@ -1,0 +1,6 @@
+*[text-angular] .btn-toolbar{
+	margin-bottom: 10px;
+}
+*[text-angular] .btn-toolbar .btn-default{
+	border-radius: 0;
+}

@@ -11,10 +11,13 @@ textAngularSetup = angular.module('textAngularSetup', []);
 // Here we set up the global display defaults, to set your own use a angular $provider#decorator.
 textAngularSetup.value('taOptions',  {
 	toolbar: [
-		['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p', 'pre', 'quote'],
-		['bold', 'italics', 'underline', 'ul', 'ol', 'redo', 'undo', 'clear'],
-		['justifyLeft','justifyCenter','justifyRight','indent','outdent'],
-		['html', 'insertImage', 'insertLink', 'insertVideo']
+		['bold', 'italics', 'underline'],
+		['h4', 'quote', 'ul', 'ol'],
+		['insertImage', 'insertLink', 'insertVideo'],
+		// ['h4', 'p', 'quote'],
+		// ['bold', 'italics', 'underline', 'ul', 'ol'],
+		// ['justifyLeft','justifyCenter','justifyRight','indent','outdent'],
+		// ['html', 'insertImage', 'insertLink', 'insertVideo']
 	],
 	classes: {
 		focussed: "focussed",
@@ -104,7 +107,8 @@ textAngularSetup.run(['taRegisterTool', '$window', 'taTranslations', 'taSelectio
 	};
 	angular.forEach(['h1','h2','h3','h4','h5','h6'], function(h){
 		taRegisterTool(h.toLowerCase(), {
-			buttontext: h.toUpperCase(),
+			// buttontext: h.toUpperCase(),
+			buttontext: 'H',
 			action: headerAction,
 			activeState: _retActiveStateFunction(h.toLowerCase())
 		});
