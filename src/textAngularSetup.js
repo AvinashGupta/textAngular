@@ -13,7 +13,7 @@ textAngularSetup.value('taOptions',  {
 	toolbar: [
 		['bold', 'italics', 'underline'],
 		['h4', 'quote', 'ul', 'ol'],
-		['insertImage', 'insertLink', 'insertVideo'],
+		[/* 'insertImage',*/ 'insertLink' /*, 'insertVideo' */],
 		// ['h4', 'p', 'quote'],
 		// ['bold', 'italics', 'underline', 'ul', 'ol'],
 		// ['justifyLeft','justifyCenter','justifyRight','indent','outdent'],
